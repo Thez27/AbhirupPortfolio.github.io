@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Abhirup Bhattacharjee | Data Analyst Portfolio</title>
+
+<style>
+  :root{
+    --bg: #1c2024;
+    --bg-alt: #24282d;
+    --accent: #5e7bff;
+    --text: #e7e9ec;
+    --text-dim: #9aa1ab;
+    --border: rgba(255,255,255,0.08);
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin:0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  a{ color: var(--accent); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
+
+  /* ===== HERO (Massively style: big bg image + centered title) ===== */
+  header.hero{
+    position: relative;
+    min-height: 60vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding: 4rem 1.5rem;
+    background:
+      linear-gradient(rgba(20,22,26,0.75), rgba(20,22,26,0.85)),
+      url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600") center/cover no-repeat;
+  }
+
+  header.hero h1{
+    font-size: 3rem;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  header.hero p.tagline{
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    max-width: 620px;
+    margin: 0 0 2rem 0;
+  }
+
+  nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    gap: 2rem;
+    padding:0;
+    margin:0;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+
+  nav.main-nav a{
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+  }
+  nav.main-nav a:hover{
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+    text-decoration:none;
+  }
+
+  /* ===== SECTIONS ===== */
+  section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+  }
+
+  section h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  /* ===== PROJECT TILES (Massively "thumb" article grid) ===== */
+  .project-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card{
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .project-card:hover{
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+
+  .project-card .tag{
+    font-size: 0.7rem;
+    text-transform:uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card h3{
+    margin: 0 0 0.5rem 0;
+    font-size: 1.15rem;
+  }
+
+  .project-card p{
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    flex-grow:1;
+  }
+
+  .project-card .repo-link{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-weight:bold;
+  }
+
+  /* ===== SKILLS ===== */
+  .skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 0.75rem;
+  }
+  .skills-list span{
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+
+  /* ===== CONTACT / FOOTER ===== */
+  footer{
+    text-align:center;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .social-links{
+    display:flex;
+    justify-content:center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+
+  footer small{
+    color: var(--text-dim);
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>Abhirup Bhattacharjee</h1>
+  <p class="tagline">Data Analyst | SQL &middot; Python &middot; Power BI &middot; Excel — turning raw data into decisions.</p>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I'm a Data Analyst based in Pune, focused on exploratory data analysis, data cleaning,
+    and building dashboards that turn raw datasets into clear business insight. Below is a
+    selection of my end-to-end analytics projects — each links straight to the code on GitHub.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project-grid">
+
+    <div class="project-card">
+      <div class="tag">SQL &middot; Data Exploration</div>
+      <h3>COVID 19 Data Exploration</h3>
+      <p>Exploratory SQL analysis on global COVID case, death, and vaccination data — joins, window functions, and rolling metrics across countries and time.</p>
+      <a class="repo-link" href="https://github.com/Thez27/AbhirupPortfolio.github.io/blob/main/COVID%20Portfolio%20Project%20-%20Data%20Exploration.sql" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="tag">SQL &middot; Data Cleaning</div>
+      <h3>Data Cleaning in SQL</h3>
+      <p>End-to-end SQL data cleaning pipeline on a global layoffs dataset: deduplication, standardizing text/date fields, and handling nulls/blanks before analysis.</p>
+      <a class="repo-link" href="https://github.com/Thez27/AbhirupPortfolio.github.io/blob/main/Data_Cleaning_Project_Layoffs.sql" target="_blank">View on GitHub →</a>
+    </div>
+
+    <div class="project-card">
+      <div class="tag">SQL &middot; EDA</div>
+      <h3>Layoffs Data Exploration</h3>
+      <p>Exploratory data analysis on layoffs (2020–2023): trends by company, industry, country, and stage, surfacing which sectors were hit hardest and when.</p>
+      <a class="repo-link" href="https://github.com/Thez27/AbhirupPortfolio.github.io/blob/main/Project_layoffs_EDA.sql" target="_blank">View on GitHub →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Data Cleaning</span>
+    <span>Exploratory Data Analysis</span>
+    <span>Dashboarding</span>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/abhirbha/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Thez27/AbhirupPortfolio.github.io" target="_blank">GitHub</a>
+  </div>
+  <small>&copy; 2026 Abhirup Bhattacharjee. Built with HTML &amp; CSS, inspired by the Massively theme (HTML5 UP).</small>
+</footer>
+
+</body>
+</html>
