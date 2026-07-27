@@ -1,7 +1,7 @@
-Option 1: Clean & Direct (Great for main bio)
+
 📊 Data Analyst | Turning raw data into actionable business insights.
 
-🛠️ Tools: SQL | Python (Pandas, NumPy) | Power BI | Excel
+🛠️ Tools: SQL | Python | Power BI | Excel | Tableau 
 
 🔍 Passionate about exploratory data analysis, data visualization, and storytelling.
 
